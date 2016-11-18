@@ -31,5 +31,39 @@
         </div>
 
     </div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
 <script src="http://monqcle-cdn.50status.com/plugin/1.0.2/monqcle-plugin.js"></script>
+
+<script>
+    $(document).ready(function(){
+         monqcle = new MONQCLE({
+            preloaded_dataset: null,
+            api_key: '55bf7b0bc304745f19334883',
+            username: 'Guest',
+            columns: 3,
+            dataset_id: '57f79a56f7d1b63b23a9bcbd', // shatterproof
+//            default_questions: ['primary_ranking'],
+//            default_query: {jurisdictions: ['none'],
+//                            questions: 'none'
+//                           },
+//            legend_card_container: 'in_grid',// jquery selector if custom, or 'in_grid' if you want it in grid
+//            legend_card_container: '#monq_tools',// jquery selector if custom, or 'in_grid' if you want it in grid
+            dataset_table_container: '#monq_dataset_table',
+            questions_container: '#question_view',
+            map_container: '#map_container',
+            on_map_click: function(d,e){
+
+                },
+            on_map_hover: function(d,e){
+                },
+            })
+
+
+    })
+
+    </script>
 </body>
